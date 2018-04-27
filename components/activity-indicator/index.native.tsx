@@ -7,6 +7,7 @@ export interface ActivityIndicatorNativeProps
   extends ActivityIndicatorPropTypes {
   styles?: IActivityIndicatorStyle;
   color?: string;
+  top?: number;
 }
 
 const indicatorStyles = StyleSheet.create<any>(indicatorStyle);
@@ -26,10 +27,10 @@ export default class RNActivityIndicator extends React.Component<
   _renderToast() {
     const styles = this.props.styles!;
     return (
-      <View style={[styles.container]}>
+      <View style={[styles.container, { top: this.props.top }]}>
         <View style={[styles.innerContainer, { height: 89 }]}>
           <View style={[styles.wrapper]}>
-            <ActivityIndicator color="white" size="large" />
+            <ActivityIndicator color="white" size="small" />
             {this.props.text && (
             // tslint:disable-next-line:jsx-no-multiline-js
               <Text style={[styles.toast]}>{this.props.text}</Text>

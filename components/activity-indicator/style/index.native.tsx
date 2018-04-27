@@ -29,10 +29,11 @@ export default {
   wrapper: {
     alignItems: 'center',
     justifyContent: 'center',
-    width: 89,
-    height: 89,
+    width: 68,
+    height: 66,
     borderRadius: variables.radius_md,
     backgroundColor: variables.toast_fill,
+    marginBottom: 22,
   },
   tip: {
     color: variables.color_text_base,
@@ -41,7 +42,7 @@ export default {
   },
   toast: {
     color: variables.color_text_base_inverse,
-    fontSize: variables.font_size_base,
+    fontSize: variables.font_size_caption_sm,
     marginTop: variables.v_spacing_sm,
   },
   spinner: {
