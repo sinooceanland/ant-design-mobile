@@ -22,7 +22,8 @@ npm-debug.log
 nohup.out
 _site
 /dist
-lib
+#允许了lib的上传
+#lib
 elasticsearch-*
 config/base.yaml
 _data

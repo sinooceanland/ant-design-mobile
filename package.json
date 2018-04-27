@@ -24,7 +24,7 @@
   },
   "files": ["dist", "lib", "es"],
   "license": "MIT",
-  "main": "lib/index.js",
+  "main": "lib/index.native.js",
   "module": "es/index.js",
   "dependencies": {
     "array-tree-filter": "~2.1.0",
